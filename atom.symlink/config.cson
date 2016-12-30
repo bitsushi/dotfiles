@@ -27,7 +27,7 @@
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
   "go-plus":
-    goPath: "/Users/holman/Code/go"
+    goPath: "/Users/johnrees/Code/go"
   "linter-eslint":
     useGlobalEslint: true
   "release-notes":
