@@ -1,3 +1,7 @@
+alias b='bundle exec'
+alias bcp='bundle exec cap production'
+alias bdcp='bundle exec dotenv cap production'
+alias mid='bundle exec middleman'
 alias sc='script/console'
 alias sg='script/generate'
 alias sd='script/destroy'
