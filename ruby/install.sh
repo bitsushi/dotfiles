@@ -1,10 +1,12 @@
 if [[ ! -x "$(which rbenv)" ]]
 then
-  echo
-  echo "Installing Ruby tools and Ruby 2.4.0"
   eval "$(rbenv init -)"
-  rbenv install 2.4.0 --skip-existing
-  rbenv global 2.4.0
+  LATEST_RUBY_VERSION="$(rbenv install -l | grep -v - | tail -1 | tr -d '[[:space:]]')"
+  echo
+  echo "Installing Ruby tools and Ruby $LATEST_RUBY_VERSION"
+  rbenv install $LATEST_RUBY_VERSION --skip-existing
+  rbenv global $LATEST_RUBY_VERSION
   gem install bundler
+  gem install rails
   rbenv rehash
 fi
